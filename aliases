@@ -1,0 +1,17 @@
+#DNSMASQ
+alias leases="cat /var/lib/dnsmasq/dnsmasq.leases"
+#FIREWALLD
+#alias fi="firewall-cmd"
+alias reload="firewall-cmd --reload"
+alias zones="firewall-cmd --list-active-zones"
+alias all="firewall-cmd --list-all"
+alias external="firewall-cmd --list-all --zone=external"
+alias internal="firewall-cmd --list-all --zone=internal"
+alias services="firewall-cmd --list-services"
+alias ports="firewall-cmd --list-ports"
+alias state="firewall-cmd --state"
+
+
+
+#SYSTEMCTL
+alias dnre="systemctl restart dnsmasq"
